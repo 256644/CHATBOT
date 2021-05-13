@@ -1,0 +1,71 @@
+intents:
+  - greet
+  - goodbye
+  - name_entry
+  - info
+  - mission
+  - faculty
+  - student
+  - placement
+  - results
+  - facility
+  - hod
+
+entities:
+  - name
+
+
+slots:
+  name:
+    type: text
+ 
+
+
+responses:
+  utter_greet:
+  - text: "Welcome to Electronics and Communication department\n-----please enter your name-----"
+    
+  
+
+  utter_goodbye:
+  - text: "Thank you"
+
+  utter_nyc:
+  - text : "For more information:http://www.sit.ac.in/html/department.php?deptid=7 "
+  
+  utter_show_name_country:
+  - text: "Hello {name} ,How may i Help you"
+
+  utter_info:
+  - text: "To create professionally competent and socially sensitive Electronics and Communication engineers capable of working in multicultural global environment."
+
+  utter_mission:
+  - text: "To provide a congenial environment for superior learning experience and offer high quality education relevant to the current and future needs of the society and careers of students in the field of Electronics and Communication Engineering."
+  
+  utter_faculty:
+  - text: "The faculty strength of the department is 31,\n which includes\n3 Professors\n7 Associate Professors\n21 Assistant Professors. \nNine of the faculty have completed their PhDs in IITs and reputed universities in the area of Speech Processing, Image processing, Networking, Communication & Microelectronics.\n Seven faculty members are pursuing their PhDs at IISc, IITs and other reputed institutions.\n For more Information:https://sit.irins.org/faculty/index/Electronics+and+Communication+Engineering"
+
+  utter_student:
+  - text: "Students graduated from the department are well placed in India and abroad. Quite a few of them have pursued higher studies both in India and abroad. Some of them have qualified for Indian Engineering and Defense Services. Students of the department have bagged university ranks including the First rank on several occasions.\nStudents of the department have bagged gold medal for securing highest CGPA among all the students of SIT. The department has state-of-the-art laboratories in the areas of Communication, DSP, Embedded systems, and Microelectronics."
+
+  utter_placement:
+  - text: "The students of E & C Department have good track records of being placed in reputed companies. In the latest academic year 2018-19, 105 students are placed on campus with the highest salary of 11.50 Lakh/Annum. Placement process for the year 2019-20 already started, 68 students have been placed in different companies. One student is offered a placement in CISCO with the package of 29 Lakh/Annum."
+
+  utter_results:
+  - text: "Toppers of Department"
+    image: "http://www.sit.ac.in/html/component/ecedept/eceimg/topper.jpg"
+
+  utter_facility:
+  - text: "Electronics Devices and Circuit Laboratory,\nDigital Electronics and Circuit Laboratory,\nCommunication Laboratory,\nAdvanced Communication Laboratory,\nLinear Integrated Circuits Laboratory,\nMicrocontroller Laboratory,\nDigitial Signal Processing Laboratory,\nVHDL Laboratory,\nVLSI Laboratory,\nPG Computer Centre,\nWireless Communication Lab,\nM10x Center / Project Laboratory,\n E - Class Room"
+
+  utter_hod:
+  - text: "Dr Kumaraswamy R\n•Ph.D - Indian Institute of Technology, Madras
+\n•M.E-BMS College of Engineering, Bangalore
+\n•B.E-Siddaganga Institute of Technology
+\nMore info: https://sit.irins.org/profile/90923#expertise_information_panel"
+
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
